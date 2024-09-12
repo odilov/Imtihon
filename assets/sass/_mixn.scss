@@ -1,0 +1,7 @@
+@mixin flex($df, $aic, $juc, $fd, $gap){
+    display: $df;
+    align-items: $aic;
+    justify-content: $juc;
+    gap: $gap;
+    flex-direction: $fd;
+}

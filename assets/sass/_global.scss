@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+@import url("https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+@media (min-width:1400px) {
+    .container{
+        max-width: 1240px;
+        margin: 0 auto;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
