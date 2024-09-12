@@ -168,7 +168,7 @@ ul {
     line-height: 20px;
   }
 }
-@media (max-width: 730px) {
+@media (max-width: 690px) {
   .hero .container {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -178,13 +178,6 @@ ul {
     justify-content: center;
     gap: 0;
     flex-direction: column;
-    order: 2;
-  }
-  .hero__heding {
-    text-align: center;
-  }
-  .hero__text {
-    text-align: center;
   }
   .hero__link {
     width: 120px;
@@ -192,10 +185,36 @@ ul {
   .hero__img {
     width: 100%;
   }
-}
-@media (max-width: 291px) {
   .hero__heding {
-    font-size: 25px;
+    text-align: center;
+  }
+  .hero__text {
+    text-align: center;
+  }
+}
+@media (max-width: 321px) {
+  .hero__heding {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .hero__text {
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
+@media (max-width: 560px) {
+  .hero__cards__left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 0;
+    flex-direction: column;
+  }
+  .hero__heding {
+    text-align: left;
+  }
+  .hero__text {
+    text-align: left;
   }
 }
 

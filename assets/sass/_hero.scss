@@ -82,22 +82,13 @@
     }
 }
 
-@media (max-width:730px) {
+@media (max-width:690px) {
     .hero{
         .container{
             grid-template-columns: repeat(1,1fr);
         }
-
         &__cards__left{
             @include flex(flex, center, center, column, 0);
-            order: 2;
-        }
-
-        &__heding{
-            text-align: center;
-        }
-        &__text{
-            text-align: center;
         }
         &__link{
             width: 120px;
@@ -105,13 +96,41 @@
         &__img{
             width: 100%;
         }
+        &__heding{
+            text-align: center;
+        }
+        &__text{
+            text-align: center;
+        }
     }
 }
 
-@media (max-width:291px) {
+
+
+
+@media (max-width:321px) {
+.hero{
+    &__heding{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    &__text{
+        font-size: 11px;
+        line-height: 20px;
+    }
+}
+}
+
+@media (max-width:560px) {
     .hero{
+        &__cards__left{
+            @include flex(flex, flex-start, flex-start, column, 0);
+        }
         &__heding{
-            font-size: 25px;
+            text-align: left;
+        }
+        &__text{
+            text-align: left;
         }
     }
 }
