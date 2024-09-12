@@ -1,0 +1,117 @@
+
+
+.hero {
+    margin-top: 65px;
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        gap: 30px;
+    }
+    &__heding{
+        font-family: $myFont;
+        font-size: 52px;
+        font-weight: 600;
+        line-height: 65px;
+        text-align: left;
+        width: 100%;
+    }
+    &__text{
+        font-family: $myFont2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin: 35px 0 40px 0;
+        width: 100%;
+    }
+    &__link{
+        font-family: $myFont2;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        text-align: left;
+        border-bottom: 2px solid orange;
+    }
+    &__cards__right{
+        overflow: hidden;
+        transform-origin: left right ;
+        width: 100%;
+        border-radius: 20px;
+    }
+    &__img:hover{
+        transform: scale(1.1);
+        object-fit: contain;
+        transition: 0.3s linear;
+    }
+}
+
+@media (max-width:1110px) {
+    .hero{
+        &__img{
+            width: 50vw;    
+        }
+    }
+}
+
+@media (max-width:1050px) {
+    .hero{
+        &__heding{
+            font-size: 40px;
+            line-height: 50px;
+        }
+        &__text{
+            font-size: 14px;
+            margin: 20px 0 30px 0;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width:900px) {
+    .hero{
+        &__heding{
+            font-size: 30px;
+            line-height: 40px;
+        }
+        &__text{
+            font-size: 12px;
+            margin: 15px 0 20px 0;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width:730px) {
+    .hero{
+        .container{
+            grid-template-columns: repeat(1,1fr);
+        }
+
+        &__cards__left{
+            @include flex(flex, center, center, column, 0);
+            order: 2;
+        }
+
+        &__heding{
+            text-align: center;
+        }
+        &__text{
+            text-align: center;
+        }
+        &__link{
+            width: 120px;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:291px) {
+    .hero{
+        &__heding{
+            font-size: 25px;
+        }
+    }
+}
