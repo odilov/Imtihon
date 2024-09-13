@@ -1,0 +1,45 @@
+@use "./varibls";
+
+.amazon{
+    margin-bottom: 100px;
+    &__item{
+        @include flex(flex, center, center, column, 20px);
+        
+    }
+    &__text{
+        text-align: center;
+        font-family: $myFont2;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 21px;
+    }
+    .swiper-wraper{
+        display: flex;
+        align-items: center;
+    }
+    &__cards{
+        @include flex(flex, center, center, column, 0px);
+
+    }
+    &__img2{
+        margin-bottom: 45px;
+    }
+    &__img{
+        margin-bottom: 30px;
+    }
+    &__heding1{
+        margin-bottom: 48px;
+        font-family: $myFont;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: left;
+    }
+    &__heding{
+        font-family: $myFont;
+         font-size: 20px;
+         font-weight: 600;
+         line-height: 27px;
+         text-align: center;
+    }
+}

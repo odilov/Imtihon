@@ -1,0 +1,42 @@
+.ifrem{
+    width: 100%;
+    height: 700px;
+    margin-bottom: 100px;
+}
+
+@media (max-width:800px) {
+    .ifrem{
+        height: 600px;
+    }
+}
+
+@media (max-width:700px) {
+    .ifrem{
+        height: 500px;
+    }
+}
+
+@media (max-width:600px) {
+    .ifrem{
+        height: 600px;
+    }
+}
+
+@media (max-width:500px) {
+    .ifrem{
+        height: 500px;
+    }
+}
+
+@media (max-width:400px) {
+    .ifrem{
+        height: 400px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:300px) {
+    .ifrem{
+        height: 300px;
+    }
+}

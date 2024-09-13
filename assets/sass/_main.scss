@@ -1,0 +1,136 @@
+.main{
+    margin-bottom: 210px;
+    &__heding{
+        width: 100%;
+        font-family: $myFont;
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 60px;
+        text-align: left;
+    }
+    &__text{
+        width: 40%;
+        font-family: $myFont2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin-bottom: 56px;
+    }
+    &__heding2{
+        font-family: $myFont;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+        margin-left: 32px;
+        margin: 30px;
+    }
+    &__text2{
+        font-family: $myFont2;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: left;
+        margin: 32px;
+    }
+    &__span{
+        margin-left: 32px;
+        font-family: Exo 2;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 21.6px;
+        text-align: left;  
+        display: flex;
+        flex-direction: column;
+        gap: 2px;     
+    }
+    .hr{
+        width: 75px;
+        height: 2px;    
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+    &__item{
+        border-radius: 15px;
+       box-shadow: 1px 1px 20px 1px black;
+       padding-bottom: 32px;
+       width: 100%;
+    }
+    &__item img{
+        width: 100%;
+    }
+}
+
+@media (max-width:916px) {
+    .main{
+        &__heding2{
+            margin: 15px;
+        }
+        &__text2{
+            margin: 15px;
+        }
+        &__span{
+            margin: 15px;
+        }
+        &__text{
+            width: 60%;
+        }
+    }
+}
+
+
+@media (max-width:690px) {
+    .main{
+        &__list{
+            flex-direction: column;
+        }
+        &__item img{
+            height: 50vh;
+        }
+        &__item{
+             
+             
+        }
+        &__text{
+            width: 80%;
+        }
+    }
+    .none{
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    .main{
+        &__heding{
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-size: 16px;
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .main{
+        &__heding{
+            font-size: 35px;
+            line-height: 35px;
+            margin-bottom: 20px;
+        }
+        &__text{
+            font-size: 14px;
+        }
+    }
+}
+
+
+

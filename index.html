@@ -1,78 +1,685 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="container">
-            <a href="./index.html">
-                <img class="header__logo" src="./img/Logotip.png" alt="Logotip" width="200" height="79">
-            </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="./index.html">
+                    <img class="header__logo" src="./img/Logotip.png"
+                        alt="Logotip" width="200" height="79">
+                </a>
 
-            <nav class="nav">
-                <input type="checkbox" id="check">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Дом</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">О работе</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Доставка</a>
-                    </li>
-                    <li class="nav__item">
-                        <a class="nav__link" href="#">Контакт</a>
-                    </li>
+                <nav class="nav">
+                    <input type="checkbox" id="check">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Дом</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">О работе</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Доставка</a>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#">Контакт</a>
+                        </li>
 
-                    <label id="ext" for="check">
-                        <i class="fa-solid fa-xmark" style="font-size: 25px;"></i>
+                        <label id="ext" for="check">
+                            <i class="fa-solid fa-xmark"
+                                style="font-size: 25px;"></i>
+                        </label>
+                    </ul>
+                </nav>
+
+                <div class="header__cards">
+                    <label id="menu" for="check">
+                        <i class="fa-solid fa-bars"
+                            style="font-size: 25px;"></i>
                     </label>
-                </ul>
-            </nav>
-
-            <div class="header__cards">
-                <label id="menu" for="check">
-                    <i class="fa-solid fa-bars" style="font-size: 25px;"></i>
-                </label>
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="container">
-                <div class="hero__cards__left">
-                    <h1 class="hero__heding">Поставщик Дальнего Востока</h1>
-                    <p class="hero__text">Наши клиенты получают полный спектр услуг по работе с Китаем.  Начиная с подбора производителя заканчивая доставкой товара до двери.  Настолько прозрачных сделок с Китаем вы еще не осуществляли. 
-                    </p>
-
-                    <a class="hero__link" href="#">Узнать больше</a>
-                </div>
-                <div class="hero__cards__right">
-                    <img class="hero__img" src="./img/adir-Cargo-Insurance 1.png" alt="">
                 </div>
             </div>
-        </section>
+        </header>
 
-        <section class="about">
-            <div class="container">
-                <ul class="about__list">
-                    <li class="about__item">
-                        <div class="about__cards">
-                            <img src="./img/about1.svg" alt="">
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__cards__left">
+                        <h1 class="hero__heding">Поставщик Дальнего Востока</h1>
+                        <p class="hero__text">Наши клиенты получают полный
+                            спектр услуг по работе с Китаем. Начиная с подбора
+                            производителя заканчивая доставкой товара до двери.
+                            Настолько прозрачных сделок с Китаем вы еще не
+                            осуществляли.
+                        </p>
+
+                        <a class="hero__link" href="#">Узнать больше</a>
+                    </div>
+                    <div class="hero__cards__right">
+                        <img class="hero__img"
+                            src="./img/adir-Cargo-Insurance 1.png" alt>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about">
+                <div class="container">
+                    <ul class="about__list">
+                        <li class="about__item">
+                            <div class="about__cards">
+                                <img class="about__img" src="./img/about1.svg"
+                                    alt>
+                            </div>
+                            <div class="about__cards__div">
+                                <h2 class="about__heding">Поиск производителей
+                                    по
+                                    товару</h2>
+                                <p class="about__text">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit, sed do eiusmod
+                                    incididunt ut.</p>
+                            </div>
+                        </li>
+                        <hr class="about__linya">
+                        <li class="about__item">
+                            <div class="about__cards">
+                                <img class="about__img" src="./img/about2.svg"
+                                    alt>
+                            </div>
+                            <div class="about__cards__div">
+                                <h2 class="about__heding">Поиск производителей
+                                    по
+                                    товару</h2>
+                                <p class="about__text">Lorem ipsum dolor sit
+                                    amet,
+                                    consectetur adipiscing elit, sed do eiusmod
+                                    incididunt ut.</p>
+                            </div>
+                        </li>
+                        <hr class="about__linya hr1">
+                        <li class="about__item">
+                            <div class="about__cards">
+                                <img class="about__img" src="./img/about3.svg"
+                                    alt>
+                            </div>
+                            <div class="about__cards__div">
+                                <h2 class="about__heding">Поиск производителей
+                                    по товару</h2>
+                                <p class="about__text">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod incididunt ut.</p>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+
+            <section class="flex">
+                <div class="container">
+                    <div class="flex__cards__left">
+                        <h2 class="flex__heding">Почему с нами <br class="br"> выгоднее?</h2>
+                        <img class="flex__img" src="./img/car photo.png" alt="">
+                    </div>
+                    <div class="flex__carsd__right">
+                        <h2 class="flex__heding2">Почему с нами  выгоднее?</h2>
+                        <div class="flex__max">
+                            <div class="flex__min">
+                                <img src="./img/sumka.svg" alt="">
+                            </div>
+                            <div class="flex__carsd">
+                                <h2 class="flex__title">Lorem ipsum dolor sit amet.</h2>
+                                <p class="flex__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                            </div>
                         </div>
-                        <h2 class="about__heding">Поиск производителей по товару</h2>
-                        <p class="about__text"></p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </main>
-</body>
+
+                        <div class="flex__max">
+                            <div class="flex__min">
+                                <img src="./img/jadval.svg" alt="">
+                            </div>
+                            <div class="flex__carsd">
+                                <h2 class="flex__title">Lorem ipsum dolor sit amet.</h2>
+                                <p class="flex__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex__max">
+                            <div class="flex__min">
+                                <img src="./img/dolor.svg" alt="">
+                            </div>
+                            <div class="flex__carsd">
+                                <h2 class="flex__title">Lorem ipsum dolor sit amet.</h2>
+                                <p class="flex__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex__max">
+                            <div class="flex__min">
+                                <img src="./img/globs.svg" alt="">
+                            </div>
+                            <div class="flex__carsd">
+                                <h2 class="flex__title">Lorem ipsum dolor sit amet.</h2>
+                                <p class="flex__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="main">
+                <div class="container">
+                    <h2 class="main__heding">Выполненные работы</h2>
+                    <p class="main__text">Мы собрали информацию по грузам,
+                        которые мы уже доставили. У нас специальный подход к
+                        каждому виду товаров.</p>
+                    <div class="main__cards cards">
+                        <ul class="main__list list">
+                            <li class="main__item">
+                                <img src="./img/photo.png" alt>
+                                <h2 class="main__heding2">Станки и
+                                    оборудование</h2>
+                                <p class="main__text2">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod ut.</p>
+                                <span class="main__span">20 000 руб.
+                                    <hr class="hr">
+                                </span>
+                            </li>
+
+                            <li class="main__item">
+                                <img src="./img/photo2.png" alt>
+                                <h2 class="main__heding2">Станки и
+                                    оборудование</h2>
+                                <p class="main__text2">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod ut.</p>
+                                <span class="main__span">20 000 руб.
+                                    <hr class="hr">
+                                </span>
+                            </li>
+
+                            <li class="main__item ">
+                                <img src="./img/photo3.png" alt>
+                                <h2 class="main__heding2">Станки и
+                                    оборудование</h2>
+                                <p class="main__text2">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod ut.</p>
+                                <span class="main__span">20 000 руб.
+                                    <hr class="hr">
+                                </span>
+                            </li>
+                          </ul>   
+                    </div>
+                </div>
+            </section>
+
+            <section class="prect">
+                <div class="container">
+                    <h2 class="prect__heding">Этапы поставки </h2>
+                    <ul class="prect__list">
+                        <li class="prect__item">
+                            <img class="prect__img" src="./img/rasm.png" alt>
+                            <div class="prect__cards">
+                                <h2 class="prect__heding2">Предложение от
+                                    продавца</h2>
+                                <hr class="prect__linya">
+                                <p class="prect__text">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Elit duis tristique
+                                    sollicitudin nibh sit amet. Ultrices eros in
+                                    cursus turpis massa tincidunt. Venenatis
+                                    urna cursus eget nunc scelerisque viverra
+                                    mauris in. </p>
+
+                                <p class="prect__text one">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Elit duis tristique
+                                    sollicitudin </p>
+                            </div>
+                        </li>
+                        <li class="prect__item">
+                            <img class="prect__img" src="./img/rasm2.png" alt>
+                            <div class="prect__cards">
+                                <h2 class="prect__heding2">Доставка</h2>
+                                <hr class="prect__linya">
+                                <p class="prect__text">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Elit duis tristique
+                                    sollicitudin nibh sit amet. Ultrices eros in
+                                    cursus turpis massa tincidunt. Venenatis
+                                    urna cursus eget nunc scelerisque viverra
+                                    mauris in. </p>
+
+                                <p class="prect__text one">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Elit duis tristique
+                                    sollicitudin </p>
+                            </div>
+                        </li>
+                        <li class="prect__item">
+                            <img class="prect__img" src="./img/rasm3.png" alt>
+                            <div class="prect__cards">
+                                <h2 class="prect__heding2">Установка у
+                                    клиента</h2>
+                                <hr class="prect__linya">
+                                <p class="prect__text">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Elit duis tristique
+                                    sollicitudin nibh sit amet. Ultrices eros in
+                                    cursus turpis massa tincidunt. Venenatis
+                                    urna cursus eget nunc scelerisque viverra
+                                    mauris in. </p>
+
+                                <p class="prect__text one">Lorem ipsum dolor sit
+                                    amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Elit duis tristique
+                                    sollicitudin </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="amazon">
+                <div class="container">
+                    <h2 class="amazon__heding1">Нам доверяют</h2>
+                    <div class="swiper mySwiper" style="margin-bottom: 50px;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <li class="amazon__item">
+                                    <img  src="./img/www3.svg" alt>
+                                    <div class="amazon__carsd">
+                                        <h2 class="amazon__heding">Лукойл</h2>
+                                    <p class="amazon__text">Нефтяная компания</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <hr class="amazon__linya">
+                            <div class="swiper-slide">
+                                <li class="amazon__item">
+                                    <img class="amazon__img" src="./img/gaz logo.svg" alt>
+                                    <div class="amazon__cards">
+                                        <h2 class="amazon__heding">Интер РАО</h2>
+                                    <p class="amazon__text">Энергетическая компания</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <hr class="amazon__linya deg">
+                            <div class="swiper-slide">
+                                <li class="amazon__item">
+                                    <img src="./img/rocheft.svg" alt>
+                                    <div class="amazon__cards">
+                                        <h2 class="amazon__heding">Ростех</h2>
+                                    <p class="amazon__text">Промышленная корпорация</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <hr class="amazon__linya">
+                            <div class="swiper-slide">
+                                <li class="amazon__item">
+                                    <img src="./img/roscomos.svg" alt>
+                                    <div class="amazon__cards">
+                                        <h2 class="amazon__heding">Банк ВТБ</h2>
+                                    <p class="amazon__text">Коммерческий банк </p>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <li class="amazon__item">
+                                    <img class="amazon__img2" src="./img/12345.svg" alt>
+                                    <div class="amazon__cards">
+                                        <h2 class="amazon__heding">Росатом</h2>
+                                    <p class="amazon__text">Корпорация атомной
+                                        энергии</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <hr class="amazon__linya">
+                            <div class="swiper-slide">
+                                <li class="amazon__item">
+                                    <img style="margin-bottom: 10px;" src="./img/123456.svg" alt>
+                                    <div class="amazon__text">
+                                        <h2 class="amazon__heding">Газпром</h2>
+                                    <p class="amazon__text">Энергетическая компания</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <hr class="amazon__linya deg">
+                            <div class="swiper-slide">
+                                <li class="amazon__item">
+                                    <img src="./img/1234567.svg" alt>
+                                    <div class="amazon__cards">
+                                        <h2 class="amazon__heding">Роснефть</h2>
+                                    <p class="amazon__text">Нефтегазовая компания</p>
+                                    </div>
+                                </li>
+                            </div>
+                            <hr class="amazon__linya">
+                            <div class="swiper-slide">
+                                <li class="amazon__item">
+                                    <img class="amazon__img2" src="./img/12345678.svg" alt>
+                                    <div class="amazon__cards">
+                                        <h2 class="amazon__heding">Роскосмос</h2>
+                                    <p class="amazon__text">Корпорация в космической отрасли</p>
+                                    </div>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contackt">
+                <div class="container">
+                    <h2 class="contackt__heding1">Сотрудники компании</h2>
+                    <ul class="contackt__list">
+                        <li class="contackt__item">
+                            <img class="contackt__img" src="./img/bratlar.jpg"
+                                alt>
+                            <div class="contackt__cards">
+                                <h2 class="contackt__heding">Антон Макаров</h2>
+                                <p class="contackt__text">Руководитель
+                                    компании</p>
+                                <hr class="contackt__linya">
+                                <div class="contackt__min__carsd">
+                                    <a href="#">
+                                        <img src="./img/instagram.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/wwww.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/linkedin.svg" alt>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contackt__item">
+                            <img class="contackt__img" src="./img/opacha2.jpg"
+                                alt>
+                            <div class="contackt__cards">
+                                <h2 class="contackt__heding">Елена
+                                    Валерьева</h2>
+                                <p class="contackt__text">Главный бухгалтер</p>
+                                <hr class="contackt__linya">
+                                <div class="contackt__min__carsd">
+                                    <a href="#">
+                                        <img src="./img/instagram.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/wwww.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/linkedin.svg" alt>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contackt__item">
+                            <img class="contackt__img" src="./img/bratlar2.jpg"
+                                alt>
+                            <div class="contackt__cards">
+                                <h2 class="contackt__heding">Иван Аркадьев </h2>
+                                <p class="contackt__text">Менеджер по
+                                    закупкам</p>
+                                <hr class="contackt__linya">
+                                <div class="contackt__min__carsd">
+                                    <a href="#">
+                                        <img src="./img/instagram.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/wwww.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/linkedin.svg" alt>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contackt__item">
+                            <img class="contackt__img" src="./img/bratlar3.jpg"
+                                alt>
+                            <div class="contackt__cards">
+                                <h2 class="contackt__heding">Борис Вавилов</h2>
+                                <p class="contackt__text">Бухгалтер</p>
+                                <hr class="contackt__linya">
+                                <div class="contackt__min__carsd">
+                                    <a href="#">
+                                        <img src="./img/instagram.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/wwww.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/linkedin.svg" alt>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contackt__item">
+                            <img class="contackt__img" src="./img/opacha.jpg"
+                                alt>
+                            <div class="contackt__cards">
+                                <h2 class="contackt__heding">Алина Кравец</h2>
+                                <p class="contackt__text">Сотрудник отдела
+                                    кадров</p>
+                                <hr class="contackt__linya">
+                                <div class="contackt__min__carsd">
+                                    <a href="#">
+                                        <img src="./img/instagram.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/wwww.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/linkedin.svg" alt>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="contackt__item">
+                            <img class="contackt__img" src="./img/bratlar4.jpg"
+                                alt>
+                            <div class="contackt__cards">
+                                <h2 class="contackt__heding">Виктор Козуб</h2>
+                                <p class="contackt__text">Менеджер по
+                                    закупкам</p>
+                                <hr class="contackt__linya">
+                                <div class="contackt__min__carsd">
+                                    <a href="#">
+                                        <img src="./img/instagram.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/wwww.svg" alt>
+                                    </a>
+                                    <a href="#">
+                                        <img src="./img/linkedin.svg" alt>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+
+            <section class="login"> 
+                <div class="container">
+                    <div class="cards__carsd">
+                        <h1 class="order">Наши контакты</h1>
+                       <div class="obshiy">
+                           <div class="reseption_left">
+                             <i class="fa-solid fa-phone"></i>
+                             <div class="phone">
+                               <h6>Телефон</h6>
+                               <h4>+7 8422 99 666 5</h4>
+                             </div>
+                           </div>
+                           <div class="reseption_left">
+                             <i class="fa-regular fa-envelope"></i>
+                             <div class="phone">
+                               <h6>E-mail</h6>
+                               <h4>info@pdv.ooo</h4>
+                             </div>
+                           </div>
+                           <div class="reseption_left">
+                             <i class="fa-brands fa-whatsapp"></i>
+                             <div class="phone">
+                               <h6>Whatsapp</h6>
+                               <h4>+86 158 666 95 616</h4>
+                             </div>
+                           </div>
+                           <div class="reseption_left">
+                             <i class="fa-brands fa-skype"></i>
+                             <div class="phone">
+                               <h6>Skype</h6>
+                               <h4>sxy-bolts.cn</h4>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+       
+   
+                         <div class="reseption_right">
+                           <div class="right_res">
+                             <p>Полное наименование:</p>
+                             <h4>ООО "Поставщик Дальнего Востока"</h4>
+                           </div>
+                           <div class="right_res">
+                             <p>ИНН:</p>
+                             <h4 class="hash_four">7329023100</h4>
+                           </div>
+                           <div class="right_res">
+                             <p>КПП:</p>
+                             <h4 class="hash_four">7329010014</h4>
+                           </div>
+                           <div class="right_res">
+                             <p>ОГРН:</p>
+                             <h4 class="hash_four">1167325074762</h4>
+                           </div>
+                           <div class="right_res">
+                             <p>Адрес:</p>
+                             <h4 id="h4">
+                               Россия, Ульяновская обл, территория Портовой Особой Экономической
+                               Зоны, проезд Первых Резидентов дом 3
+                             </h4>
+                           </div>
+                         </div>
+                </div>
+            </section>
+
+            <section class="pageand">
+                <div class="container">
+                    <iframe class="ifrem" src="https://www.youtube.com/embed/OEV8gMkCHXQ?si=M6z77oNZ1SAHTNM3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <a href="./index.html">
+                    <img src="./img/LOGO (9).svg" alt="">
+                </a>
+                  <div class="footer__home">
+                    <div class="footer__cards__carsd">
+                        <div class="footer__link">
+                            <a href="#">Каталог</a>
+                        </div>
+                        <div class="footer__link">
+                            <a href="#">о компании</a>
+                        </div>
+                        <div class="footer__link">
+                            <a href="#">Индивидуальная</a>
+                        </div>
+                        <div class="footer__link">
+                            <a href="#">Партнерам</a>
+                        </div>
+                      </div>
+    
+                      <div class="footer__cards__carsd">
+                        <div class="footer__link">
+                            <a href="#">2D, 3D модели</a>
+                        </div>
+                        <div class="footer__link">
+                            <a href="#">Шоу-румы</a>
+                        </div>
+                        <div class="footer__link">
+                            <a href="#">Дилерам</a>
+                        </div>
+                        <div class="footer__link">
+                            <a href="#">Конфигуратор</a>
+                        </div>
+                      </div>
+    
+                        <ul class="footer__list">
+                            <li class="footer__item3">
+                                <span class="footer__span">
+                                    <img src="./img/insta.svg" alt="" width="30" height="30">
+                                    <img src="./img/fasebook.svg" alt="" width="30" height="30">
+                                </span>
+    
+                                <a class="footer__link2" href="tel:+38 (099)-638-45-37">+38 (099)-638-45-37</a>
+                                <button class="footer__btn">Персональная консультация
+                                    <i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i>
+                                </button>
+                            </li>
+                        </ul>
+                  </div>
+                </div>
+            </footer>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+              slidesPerView: 1,
+              spaceBetween: 10,
+              breakpoints: {
+                280: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                500: {
+                  slidesPerView: 2,
+                  spaceBetween: 40,
+                },
+                700: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                1000: {
+                  slidesPerView: 4,
+                  spaceBetween: 40,
+                }
+              },
+            });
+          </script>
+    </body>
 </html>
